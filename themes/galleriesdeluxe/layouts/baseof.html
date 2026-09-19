@@ -6,7 +6,10 @@
 			{{ .Title }}
 		</title>
 
-		<link rel="icon" href="{{ `favicon.svg` | relURL }}" type="image/svg+xml" />
+		<link rel="icon" href="{{ `favicon.svg?v=2` | relURL }}" type="image/svg+xml" />
+		<link rel="icon" href="{{ `favicon-32x32.png?v=2` | relURL }}" type="image/png" sizes="32x32" />
+		<link rel="shortcut icon" href="{{ `favicon.ico?v=2` | relURL }}" />
+		<link rel="apple-touch-icon" href="{{ `apple-touch-icon.png?v=2` | relURL }}" sizes="180x180" />
 
 		<meta name="viewport" content="width=device-width,minimum-scale=1" />
 		{{ hugo.Generator }}
