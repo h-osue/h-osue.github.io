@@ -18,7 +18,8 @@ disableKinds = ["taxonomy", "term"]
 [params]
     [params.author]
         name = "Hosué N."
-        email = ""
+        email = "lujosue@gmail.com"
+        whatsapp = "https://wa.me/qr/6FSB3HR6HRPHH1"
         description = "Fotografía documental y cobertura de eventos"
 
     [params.galleriesdeluxe]
