@@ -1,0 +1,36 @@
+baseURL = "https://example.org/"
+title = "Hosué N. - Fotografía"
+theme = ["galleriesdeluxe", "gallerydeluxe", "common-partials"]
+defaultContentLanguage = "es"
+disableKinds = ["taxonomy", "term"]
+
+[languages]
+    [languages.es]
+        locale = "es-PE"
+        label = "Español"
+        weight = 1
+
+[caches]
+    [caches.images]
+        dir = ":cacheDir/galleriesdeluxe"
+        maxAge = "4320h"
+
+[params]
+    [params.author]
+        name = "Hosué N."
+        email = ""
+        description = "Fotografía documental y cobertura de eventos"
+
+    [params.galleriesdeluxe]
+        [params.galleriesdeluxe.cssvars]
+            color-background = "#1d1e2c"
+            color-background-footer = "#1a1b29"
+            color-text = "#ffffff"
+            color-text-footer = "#ffffff"
+            color-primary = "#fbb7c0"
+            color-secondary = "#b6244f"
+
+    [params.gallerydeluxe]
+        shuffle = false
+        reverse = true
+        enable_exif = false

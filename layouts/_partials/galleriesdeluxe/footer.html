@@ -1,0 +1,17 @@
+<div>
+  <div>
+    Todas las fotos &copy;
+    {{ with site.Params.author }}
+      {{ if and .name .email }}
+        <a href="mailto:{{ .email }}">{{ .name }}</a>
+      {{ else }}
+        {{ .name }}
+      {{ end }}
+    {{ end }}
+    {{ now.Year }}.
+  </div>
+  <div>
+    Creado con
+    <a class="mt" href="https://github.com/bep/galleriesdeluxe">Galleries Deluxe</a>.
+  </div>
+</div>

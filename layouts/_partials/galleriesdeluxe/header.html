@@ -1,0 +1,22 @@
+<header>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.subtitle }}
+    <p class="site-subtitle">{{ . }}</p>
+  {{ end }}
+  <div>
+    <ul>
+      {{ if .IsHome }}
+        {{ with site.GetPage "about" }}
+          <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+      {{ else }}
+        <li><a href="{{ site.Home.RelPermalink }}">{{ site.Home.LinkTitle }}</a></li>
+        {{ with .Parent }}
+          {{ if and (not .IsHome) (not .IsSection) }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</header>
