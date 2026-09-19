@@ -35,13 +35,9 @@
 }
 
 .whatsapp-contact svg {
-  width: 1.75rem;
-  height: 1.75rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
+  width: 1.9rem;
+  height: 1.9rem;
+  fill: currentColor;
 }
 
 @media (max-width: 767px) {
